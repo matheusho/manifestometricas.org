@@ -45,20 +45,28 @@ h1 span {
   padding-left: 4.4rem;
 }
 
-blockquote {
+.mission, .metrics {
+  margin-bottom: 4rem;
+}
+
+.blockquote {
+  padding: 4rem 0;
   background: whitesmoke;
+}
+
+.blockquote blockquote {
   padding: 2rem;
   border-left: 4px solid;
   margin: inherit;
   font-style: italic;
 }
 
-blockquote p {
+.blockquote blockquote p {
   margin-top: 0;
   font-size: 1rem;
 }
 
-blockquote i {
+.blockquote blockquote i {
   display: block;
   font-weight: bold;
   font-size: .85rem;
@@ -85,6 +93,18 @@ dd {
 
   h1 span {
     padding-left: 2.7rem;
+  }
+
+  .mission, .metrics {
+    margin-bottom: 2rem;
+  }
+
+  .mission h2 {
+    font-size: 1.2rem;
+  }
+
+  .blockquote {
+    padding: 0;
   }
 
   .blockquote .container {

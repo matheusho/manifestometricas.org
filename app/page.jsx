@@ -1,12 +1,9 @@
 export default function Home() {
   return (
     <main className="manifesto">
-      <section className="blockquote">
+      <section className="mission">
         <div className="container">
-          <blockquote>
-            <p>Se medir importa, é porque deve ter algum efeito prático nas decisões e nos comportamentos. Se não conseguirmos identificar uma decisão que possa ser afetada por uma métrica proposta e como ela pode influenciar as decisões, então a métrica simplesmente não tem valor.</p>
-            <i>Douglas W. Hubbard, How to Measure Anything</i>
-          </blockquote>
+          <h2>Simplificar e desmistificar o tema Métricas em times ágeis</h2>
         </div>
       </section>
 
@@ -31,6 +28,15 @@ export default function Home() {
             <dt>Invista energia em coletar métricas que ajudem as pessoas a tomarem melhores decisões.</dt>
             <dd>- Inspirado em Eric Ries, Lean Startup</dd>
           </dl>
+        </div>
+      </section>
+
+      <section className="blockquote">
+        <div className="container">
+          <blockquote>
+            <p>Se medir importa, é porque deve ter algum efeito prático nas decisões e nos comportamentos. Se não conseguirmos identificar uma decisão que possa ser afetada por uma métrica proposta e como ela pode influenciar as decisões, então a métrica simplesmente não tem valor.</p>
+            <i>- Douglas W. Hubbard, How to Measure Anything</i>
+          </blockquote>
         </div>
       </section>
     </main>
