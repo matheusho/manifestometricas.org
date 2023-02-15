@@ -1,57 +1,38 @@
-import Image from 'next/image'
-import styles from './page.module.css'
-
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js 13!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://beta.nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js 13</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Explore the Next.js 13 playground.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates/next.js/app-directory?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>Deploy your Next.js site to a public URL with Vercel.</p>
-          </a>
+    <main className="manifesto">
+      <section className="blockquote">
+        <div className="container">
+          <blockquote>
+            <p>Se medir importa, é porque deve ter algum efeito prático nas decisões e nos comportamentos. Se não conseguirmos identificar uma decisão que possa ser afetada por uma métrica proposta e como ela pode influenciar as decisões, então a métrica simplesmente não tem valor.</p>
+            <i>Douglas W. Hubbard, How to Measure Anything</i>
+          </blockquote>
         </div>
-      </main>
+      </section>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
-    </div>
+      <section className="metrics">
+        <div className="container">
+          <dl>
+            <dt>Privilegie os resultados e as pessoas ao invés da matemática e dos cálculos.</dt>
+            <dd>- Albino & Caco</dd>
+
+            <dt>Você precisa contar uma história que te ajude a tomar decisões corretas e ações claras. Ter dados e métricas não é o suficiente!</dt>
+            <dd>- Inspirado em Troy Magennis</dd>
+
+            <dt>Dados servem como forma de gerar evolução e fazer as pessoas se sentirem melhores. Número sem contexto é só um dado.</dt>
+            <dd>- Inspirado em Troy Magennis</dd>
+
+            <dt>Você não faz previsões para dizer que está certo. Você faz previsões para identificar se está errado.</dt>
+            <dd>- Troy Magennis</dd>
+
+            <dt>Compare equipes com a perspectiva de evoluí-las.</dt>
+            <dd>- Inspirado em Troy Magennis</dd>
+
+            <dt>Invista energia em coletar métricas que ajudem as pessoas a tomarem melhores decisões.</dt>
+            <dd>- Inspirado em Eric Ries, Lean Startup</dd>
+          </dl>
+        </div>
+      </section>
+    </main>
   )
 }
