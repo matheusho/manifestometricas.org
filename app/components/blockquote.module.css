@@ -1,0 +1,32 @@
+.blockquote {
+  padding: 4rem 0;
+  background: whitesmoke;
+}
+
+.blockquote__quote {
+  padding: 2rem;
+  border-left: 4px solid;
+  margin: inherit;
+  font-style: italic;
+}
+
+.blockquote__quote__p {
+  margin-top: 0;
+  font-size: 1rem;
+}
+
+.blockquote__quote__i {
+  display: block;
+  font-weight: bold;
+  font-size: .85rem;
+}
+
+@media screen and (max-width: 520px) {
+  .blockquote {
+    padding: 0;
+  }
+
+  .container {
+    padding: 0;
+  }
+}

@@ -1,3 +1,5 @@
+import { Header } from './components/header'
+
 import './globals.css'
 
 export default function RootLayout({ children }) {
@@ -9,11 +11,7 @@ export default function RootLayout({ children }) {
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;300;700&display=swap" rel="stylesheet" />
       </head>
       <body>
-        <header>
-          <div className="container">
-            <h1>Manifesto<span>Métricas</span></h1>
-          </div>
-        </header>
+        <Header />
         {children}
       </body>
     </html>

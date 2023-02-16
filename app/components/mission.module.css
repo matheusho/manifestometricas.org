@@ -1,0 +1,13 @@
+.mission {
+  margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 520px) {
+  .mission {
+    margin-bottom: 2rem;
+  }
+
+  .mission__title {
+    font-size: 1.2rem;
+  }
+}

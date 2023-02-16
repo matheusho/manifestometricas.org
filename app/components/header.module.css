@@ -1,0 +1,32 @@
+.header {
+  padding-top: 2rem;
+}
+
+.header__title {
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 4rem;
+  text-transform: uppercase;
+}
+
+.header__title--span {
+  display: block;
+  padding-left: 4.4rem;
+}
+
+.header__container {
+  margin: 0 auto;
+  padding: 0 2rem;
+  max-width: 1280px;
+}
+
+@media screen and (max-width: 520px) {
+  .header__title {
+    font-size: 3rem;
+    line-height: 2.35rem;
+  }
+
+  .header__title--span {
+    padding-left: 2.7rem;
+  }
+}

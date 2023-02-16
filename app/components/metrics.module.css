@@ -1,0 +1,22 @@
+.metrics {
+  margin-bottom: 4rem;
+}
+
+.metrics__list-item {
+  display: list-item;
+  list-style-type: upper-roman;
+  margin-top: 2rem;
+}
+
+.metrics__list-details {
+  font-weight: 100;
+  font-size: .75rem;
+  font-style: italic;
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: 520px) {
+  .metrics {
+    margin-bottom: 2rem;
+  }
+}
