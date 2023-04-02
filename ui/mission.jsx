@@ -1,6 +1,6 @@
-import { Container } from './container'
+import { Container } from './container';
 
-import styles from './mission.module.css'
+import styles from './mission.module.css';
 
 export function Mission() {
   return (
@@ -11,5 +11,5 @@ export function Mission() {
         </h2>
       </Container>
     </section>
-  )
+  );
 }

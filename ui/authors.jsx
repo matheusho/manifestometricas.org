@@ -1,11 +1,9 @@
-import Image from "next/image";
+import Image from 'next/image';
+import styles from './authors.module.css';
+import { Container } from './container';
+import { Icon } from './icon';
 
-import { authors } from "../../data/authors";
-import { Icon } from "./icon";
-import { Container } from "./container";
-import styles from "./authors.module.css";
-
-export function Authors() {
+export function Authors({ authors }) {
   return (
     <div className={styles.authors}>
       <Container customClass={styles.authors__container}>
@@ -21,11 +19,8 @@ export function Authors() {
               />
               <h3 className={styles.authors__name}>{name}</h3>
               <ul className={styles.authors__links}>
-                {links?.map((link, i) => (
-                  <li
-                    key={i.toString()}
-                    className={styles["authors__links-li"]}
-                  >
+                {links?.map((link, k) => (
+                  <li key={k} className={styles['authors__links-li']}>
                     <a
                       href={link.href}
                       title={`${link.type} ${name}`}
@@ -38,7 +33,7 @@ export function Authors() {
                 ))}
               </ul>
             </div>
-          )
+          ),
         )}
       </Container>
     </div>

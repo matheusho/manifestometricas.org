@@ -1,19 +1,19 @@
-import { Header } from './components/header'
+import { IBM_Plex_Mono } from 'next/font/google';
+import 'styles/globals.css';
+import { Header } from 'ui/header';
 
-import './globals.css'
+const primaryFont = IBM_Plex_Mono({
+  subsets: ['latin'],
+  weight: ['100', '300', '700'],
+});
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
-        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;300;700&display=swap" rel="stylesheet" />
-      </head>
+    <html lang="en" className={primaryFont.className}>
       <body>
         <Header />
         {children}
       </body>
     </html>
-  )
+  );
 }

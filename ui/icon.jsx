@@ -18,7 +18,7 @@ const linkedin = (
 );
 
 export const Icon = ({ name }) => {
-  const icons = new Map([["linkedin", linkedin]]);
+  const icons = new Map([['linkedin', linkedin]]);
 
   return icons.get(name);
 };

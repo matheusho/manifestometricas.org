@@ -1,15 +1,16 @@
-import { Authors } from "./components/authors";
-import { Blockquote } from "./components/blockquote";
-import { Metrics } from "./components/metrics";
-import { Mission } from "./components/mission";
+import { authors } from 'lib/authors';
+import { Authors } from 'ui/authors';
+import { Blockquote } from 'ui/blockquote';
+import { Metrics } from 'ui/metrics';
+import { Mission } from 'ui/mission';
 
 export default function Home() {
   return (
-    <main>
+    <>
       <Mission />
       <Metrics />
       <Blockquote />
-      <Authors />
-    </main>
+      <Authors authors={authors} />
+    </>
   );
 }

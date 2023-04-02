@@ -18,7 +18,7 @@
 .blockquote__quote__i {
   display: block;
   font-weight: bold;
-  font-size: .85rem;
+  font-size: 0.85rem;
 }
 
 @media screen and (max-width: 520px) {
