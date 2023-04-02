@@ -1,0 +1,41 @@
+.authors {
+  padding: 2rem 0;
+}
+
+.authors__container {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.authors__author {
+  text-align: center;
+}
+
+.authors__name {
+  margin: 8px;
+  padding: 0;
+}
+
+.authors__links {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+.authors__links-li {
+  list-style: none;
+}
+
+.authors__avatar {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 520px) {
+  .authors__container {
+    flex-direction: column;
+  }
+  .authors__author {
+    margin: 16px;
+  }
+}
